@@ -50,6 +50,7 @@ public class StudentController_valid {
 
 	// =========================================
 	// 등록처리: 학생정보 기록 후, 저장 클릭 >> 학생정보 삽입
+	// @Valid >> 검증해라
 	@PostMapping
 	public String create(@Valid @ModelAttribute Student student, BindingResult bindingResult, Model model) {
 		if (bindingResult.hasErrors()) {
@@ -71,6 +72,7 @@ public class StudentController_valid {
 	}
 
 	// 수정 처리
+	// @Valid >> 검증해라
 	@PostMapping("/{id}")
 	public String update(@PathVariable Long id, @Valid @ModelAttribute Student student, BindingResult bindingResult) {
 		if (bindingResult.hasErrors()) {
@@ -82,7 +84,7 @@ public class StudentController_valid {
 		studentService.updateStudent(student);
 		return "redirect:/students/valid";
 	}
-	
+
 	// =========================================
 	// 삭제 처리
 	@PostMapping("/{id}/delete")
