@@ -23,7 +23,7 @@ public interface StudentMapper {
 	Student findById(Long id);
 
 	// 3. 삽입
-	@Insert("INSERT INTO student(NAME, email, age) \r\n" + "  	VALUES (#{name}, #{email}, #{age})")
+	@Insert("INSERT INTO student(NAME, email, age) VALUES\r\n" + "		(#{name}, #{email}, #{age})")
 	@Options(useGeneratedKeys = true, keyProperty = "id")
 	void insert(Student student);
 
