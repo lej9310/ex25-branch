@@ -8,7 +8,7 @@
 		SELECT * FROM student ORDER BY id DESC    
   </select>
 
-  <select id="findById" resultType="Student" parameterType="long">
+  <!--<select id="findById" resultType="Student" parameterType="long">
 		SELECT * FROM student WHERE id = #{id}
   </select>
 
@@ -26,6 +26,6 @@
   
   <delete id="delete" parameterType="long">
 		DELETE FROM student WHERE id = #{id} 
-  </delete>
+  </delete>-->
   
 </mapper>
