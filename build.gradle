@@ -24,8 +24,8 @@ repositories {
 	mavenCentral()
 }
 
-dependencies {	
-    //  Jakarta Validation API 의존성 추가: 값을 검증하는 코드
+dependencies {
+	//  Jakarta Validation API 의존성 추가: 값을 검증하는 코드
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
