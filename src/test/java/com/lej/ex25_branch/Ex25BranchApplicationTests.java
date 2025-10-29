@@ -5,7 +5,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 // TDD(Test-Driven Development): 코드 작성 전에 테스트 작성 - Red >> Green >> Refactor
 
-
 @SpringBootTest
 class Ex25BranchApplicationTests {
 

@@ -14,7 +14,6 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
 public class StudentService {
-
 	private final StudentMapper studentMapper;
 
 	public List<Student> getAllStudents() {
@@ -45,7 +44,6 @@ public class StudentService {
 
 	@Transactional
 	public void deleteStudent(Long id) {
-		studentMapper.delete(id);		
-	}	
-	
+		studentMapper.delete(id);
+	}
 }
