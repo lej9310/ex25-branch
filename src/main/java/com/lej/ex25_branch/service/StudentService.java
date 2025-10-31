@@ -10,6 +10,8 @@ import com.lej.ex25_branch.mapper.StudentMapper;
 
 import lombok.RequiredArgsConstructor;
 
+// StudentService 클래스: 학생 관련 CRUD(Create, Read, Update, Delete) 동작을 처리하는 서비스
+// StudentRestController 클래스에 주입
 @Service
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
@@ -19,13 +21,6 @@ public class StudentService {
 
 	public List<Student> getAllStudents() {
 		return studentMapper.findAll();
-
-		// DB연결전에 테스트 ===========================
-		// List<Student> students = new ArrayList<>();
-		// students.add(new Student() {{setId(1L); setName("홍길동");}});
-		// students.add(new Student() {{setId(2L); setName("이몽룡");}});
-		// students.add(new Student() {{setId(3L); setName("성춘향");}});
-		// return students;
 	}
 
 	public Student getStudent(Long id) {

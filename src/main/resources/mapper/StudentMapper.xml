@@ -24,7 +24,7 @@
 		WHERE id = #{id}
   </update>
   
-  <delete id="delete" parameterType="Long">
+  <delete id="delete" parameterType="long">
 		DELETE FROM student WHERE id = #{id} 
   </delete>
   
